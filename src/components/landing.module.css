@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(48, 119, 157, 0.6); /* Transparent Green */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  animation: pulse 1s infinite alternate; /* Add pulsating animation */
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.btn:hover {
+  background-color: rgba(48, 119, 157, 0.6); /* Darker Transparent Green */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Update box-shadow */
+  animation: none; /* Disable pulsating animation on hover */
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center; /* Center logo horizontally */
+  align-items: center; /* Center items vertically */
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.logo {
+  width: 250px; /* Adjust width for mobile */
+  height: auto;
+}
+
+.buttonContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center button horizontally */
+  align-items: flex-end; /* Align button to the bottom */
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+

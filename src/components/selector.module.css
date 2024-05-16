@@ -1,0 +1,379 @@
+
+/* selector.module.css */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #007bff; */
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.button {
+  flex-grow: 1;
+  height: 100%;
+  background-color: transparent; /* Set background color to transparent */
+  color: white;
+  font-size: 1.9em; /* Increase font size */
+  border: 2px solid transparent; /* Set border to transparent by default */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  transform-origin: 50% 50%;
+  transition: transform 0.1s ease, color 0.1s ease, border-color 0.1s ease; /* Add border-color transition */
+  padding: 3%;
+}
+
+/* Add this CSS to your selector.module.css file */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.closeButton:hover {
+  background-color: #f0f0f0;
+}
+
+.loading-message {
+  font-size: 16px;
+  color: #333; /* Adjust color as needed */
+  margin-top: 15px; /* Add margin for spacing */
+}
+
+.customer,
+.business {
+  font-style: normal; /* Set font style to normal */
+}
+
+.customer {
+  transform: skewX(-11deg);
+}
+
+.business {
+  transform: skewX(-11deg);
+}
+
+.channelPartner {
+  transform: skewX(-11deg);
+}
+
+.button:hover {
+  transform: skewX(-11deg) scale(1.1); /* Scale up on hover */
+  color: rgba(255, 255, 255, 1); /* Change text color on hover */
+  border-color: black; 
+}
+
+.trustMessage {
+  font-size: 15px;
+  color: #0c438b;
+  margin-top: 8px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.formModal {
+  position: fixed;
+  width: 22%;
+  top: 50%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  
+}
+
+
+.formModal h2 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.formModal input[type="text"],
+.formModal input[type="email"],
+.formModal input[type="tel"],
+.formModal textarea {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.formModal textarea {
+  resize: vertical;
+}
+
+
+/*business form*/ 
+.formModal2 {
+  position: fixed;
+  width: 22%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  
+}
+
+.formModal2 h2 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.formModal2 input[type="text"],
+.formModal2 input[type="email"],
+.formModal2 input[type="tel"],
+.formModal2 textarea {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.formModal2 textarea {
+  resize: vertical;
+}
+
+
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+
+.successMessage, .errorMessage {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+.successMessage {
+  color: #4ab84d; /* Green */
+  background-color: #e8f5e9; /* Light green */
+  border: 1px solid #81c784; /* Dark green */
+  font-size: 18px;
+}
+
+.errorMessage {
+  color: #f44336; /* Red */
+  background-color: #ffebee; /* Light red */
+  border: 1px solid #e57373; /* Dark red */
+  font-size: 18px;
+}
+
+
+
+
+
+/* chanelpartner css starts */
+
+
+
+
+.formModal1 {
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 30%; 
+    display: flex;
+    flex-direction: column; */
+
+    position: fixed;
+    width: 28%;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+.formModal1 input[type="text"],
+.formModal1 input[type="email"],
+.formModal1 input[type="tel"],
+.formModal1 textarea {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.formModal1 textarea {
+  resize: vertical;
+}
+
+
+
+
+/* .formModal1 .inputGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.formModal1 .inputGroupBottom {
+  margin-top: 20px; 
+}
+
+.formModal1 .inputGroup input {
+  width: calc(45% - 5px); 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.formModal1 .inputGroup.branchIFSC input {
+  width: 100%; 
+}
+
+.formModal1 .inputGroup input:first-child {
+  margin-right: 10px; 
+} */
+
+.formModal1 h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.formModal1 h2 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.submitButton1 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submitButton1:hover {
+  background-color: #0056b3;
+}
+
+/* chanelpartner css ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For screens smaller than 768px (typical tablets and smartphones in portrait mode), adjust styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 100%;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .button {
+    width: 80%; /* Adjust button width */
+    margin: 10px 0; /* Add vertical margin between buttons */
+    text-align: center; /* Center text within buttons */
+  }
+
+  .formModal,
+  .formModal2,
+  .formModal1 {
+    width: 80%; /* Adjust modal width */
+    left: 50%;
+    /* transform: translateX(50%); */
+    top: 50%; /* Center vertically */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  .formModal1 .inputGroup input {
+    width: 100%; /* Set input width to 100% for smaller screens */
+    margin: 5px 0; /* Adjust margin */
+  }
+
+  .submitButton1 {
+    margin-top: 30px; /* Adjust margin top */
+    width: 100%; /* Set button width to 100% */
+  }
+}
+
