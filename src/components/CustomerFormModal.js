@@ -17,7 +17,7 @@ function CustomerFormModal({ onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    const response = await fetch("http://localhost:8080/customer", {
+    const response = await fetch("https://dpr-api.vercel.app/customer", {
       method: "POST",
       body: JSON.stringify(form),
       headers: {
