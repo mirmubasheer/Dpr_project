@@ -3,8 +3,6 @@ import styles from "./selector.module.css";
 import CustomerFormModal from "./CustomerFormModal";
 import ChannelPartnerFormModal from "./ChannelPartnerFormModal";
 import BusinessFormModal from "./BusinessFormModal";
-// import Header from "./common/header";
-// import video1 from "../video/hitechh.mp4";
 
 function Selector() {
   const [showCustomerModal, setShowCustomerModal] = useState(false);
