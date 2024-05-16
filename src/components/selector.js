@@ -4,7 +4,7 @@ import CustomerFormModal from "./CustomerFormModal";
 import ChannelPartnerFormModal from "./ChannelPartnerFormModal";
 import BusinessFormModal from "./BusinessFormModal";
 // import Header from "./common/header";
-import video1 from "../video/hitechh.mp4";
+// import video1 from "../video/hitechh.mp4";
 
 function Selector() {
   const [showCustomerModal, setShowCustomerModal] = useState(false);
@@ -42,7 +42,7 @@ function Selector() {
   return (
     <>
       <div className={styles.container}>
-        <video className={styles.video} src={video1} autoPlay loop muted />
+         <video className={styles.video} src="/video/hitechh.mp4" autoPlay loop muted />
         <button
           className={`${styles.button} ${styles.customer}`}
           onClick={toggleCustomerModal}
