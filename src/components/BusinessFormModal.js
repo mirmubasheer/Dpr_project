@@ -16,7 +16,7 @@ function BusinessFormModal({ onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    const response = await fetch("http://localhost:8080/business", {
+    const response = await fetch("https://dpr-api.vercel.app/business", {
       method: "POST",
       body: JSON.stringify(form),
       headers: {

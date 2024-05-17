@@ -18,7 +18,7 @@ function ChannelPartnerFormModal({ onClose }) {
     e.preventDefault();
     setIsLoading(true);
     
-      const response = await fetch("http://localhost:8080/cp", {
+      const response = await fetch("https://dpr-api.vercel.app/cp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
